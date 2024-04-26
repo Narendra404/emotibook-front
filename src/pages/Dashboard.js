@@ -11,7 +11,7 @@ export default function Dashboard() {
   useEffect(() => {
     loadUser();
     loadPosts();
-  }, []);
+  });
 
   const loadUser = async () => {
     try {
@@ -35,7 +35,7 @@ export default function Dashboard() {
   const deletePost = async (postId) => {
     try {
       await axios.delete(`http://localhost:8080/post/${postId}`);
-      loadPosts();
+      await loadPosts();
     } catch (error) {
       console.error(`Error deleting post with ID ${postId}:`, error);
     }
@@ -89,7 +89,7 @@ export default function Dashboard() {
               <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Content</th>
+                <th scope="col">Post</th>
                 <th scope="col">Options</th>
               </tr>
               </thead>

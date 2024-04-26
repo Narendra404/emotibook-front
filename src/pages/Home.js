@@ -91,19 +91,19 @@ export default function Home() {
         <h2 className="text-center m-4 ">Posts</h2>
         <table className="table border shadow">
           <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Post id</th>
-              <th scope="col">Content</th>
-              <th scope="col">Likes</th>
-            </tr>
+          <tr>
+            <th scope="col">Post id</th>
+            <th scope="col">Content</th>
+            <th scope="col">Sentiment</th>
+            <th scope="col">Likes</th>
+          </tr>
           </thead>
           <tbody>
-            {posts.map((post) => (
+          {posts.map((post) => (
               <tr key={post.id}>
                 <th scope="row">{post.id}</th>
-                <td>{post.id}</td>
                 <td>{post.content}</td>
+                <td>{post.sentiment}</td>
                 <td>{post.likes}</td>
                 <td>
                   {/* <Link
@@ -126,7 +126,7 @@ export default function Home() {
                   </button> */}
                 </td>
               </tr>
-            ))}
+          ))}
           </tbody>
         </table>
       </div>

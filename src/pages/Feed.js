@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 import LikeButton from "../layout/LikeButton";
 
 export default function Feed() {
@@ -48,7 +48,7 @@ export default function Feed() {
                     <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow" key={post.id}>
                         <h5>{post.content}</h5>
                         {/*<p>Likes: {post.likes}</p>*/}
-                        <LikeButton likes={post.likes} />
+                        <LikeButton likes={post.likes} id={post.id}/>
                     </div>
                 ))}
             </div>

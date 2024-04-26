@@ -8,6 +8,10 @@ const logoStyle = {
   marginRight: "10px", // Adjust the spacing between the logo and text
 };
 
+const goBack = () => {
+  window.history.back();
+};
+
 export default function Navbar() {
 
   const location = useLocation();
@@ -62,6 +66,20 @@ export default function Navbar() {
               </Link>
             </ul>
             )}
+            {pathname.includes("/feed") && (
+                <ul>
+                  <Link className="btn btn-outline-light" onClick={goBack}>
+                    Back
+                  </Link>
+                </ul>
+            )}
+            {pathname.includes("/admin") && (
+              <ul>
+                <Link className="btn btn-outline-light" onClick={goBack}>
+                  Back
+                </Link>
+              </ul>
+          )}
           </div>
         </div>
       </nav>
