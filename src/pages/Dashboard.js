@@ -11,7 +11,7 @@ export default function Dashboard() {
   useEffect(() => {
     loadUser();
     loadPosts();
-  });
+  }, []);
 
   const loadUser = async () => {
     try {

@@ -10,7 +10,7 @@ export default function AddPost() {
   const [post, setPost] = useState({
     content: "",
     likes: 0,
-    user: { id: parseInt(id) }, // Set the userId directly in the post object
+    user: { id: parseInt(id) },
   });
 
   const { content } = post;
@@ -48,13 +48,14 @@ export default function AddPost() {
                 <label htmlFor="Post" className="form-label">
                   Post Content
                 </label>
-                <input
-                    type="text"
+                <textarea
                     className="form-control"
                     placeholder="Type something ..."
                     name="content"
                     value={content}
                     onChange={onInputChange}
+                    rows={5} // Set the number of rows for initial size
+                    style={{ resize: "vertical" }} // Allow vertical resizing
                 />
               </div>
               <button type="submit" className="btn btn-outline-primary">

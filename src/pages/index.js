@@ -6,7 +6,7 @@ const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    minHeight: "100vh", // Set the height to full viewport height
+    minHeight: "89.7vh", // Set the height to full viewport height
     display: "flex",
     alignItems: "center",
 };
@@ -19,7 +19,7 @@ const boldFontStyle = {
 
 const Index = () => {
     return (
-        <Container fluid className="mt-4">
+        <Container fluid >
             <Row className="justify-content-center" style={backgroundStyle}>
                 <Col className="text-center text-light">
                     <h1 className="display-1" style={boldFontStyle}>Emotibook</h1>

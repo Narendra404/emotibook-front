@@ -48,6 +48,7 @@ export default function AddUser() {
           <h2 className="text-center m-4">Sign Up</h2>
 
           <form onSubmit={onSubmit}>
+            {console.log("OnSubmit triggered.")}
             <div className="mb-3">
               <label htmlFor="Name" className="form-label">
                 Name
@@ -62,7 +63,8 @@ export default function AddUser() {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="Email" className="form-label">
+              <label htmlFor="Email
+              l" className="form-label">
                 E-mail
               </label>
               <input

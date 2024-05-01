@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import logoImage from "./github-logo.png";
+import {Button} from "react-bootstrap";
 
 const logoStyle = {
   width: "50px", // Set the width of the logo
@@ -68,16 +69,16 @@ export default function Navbar() {
             )}
             {pathname.includes("/feed") && (
                 <ul>
-                  <Link className="btn btn-outline-light" onClick={goBack}>
+                  <Button className="btn btn-outline-light" onClick={goBack}>
                     Back
-                  </Link>
+                  </Button>
                 </ul>
             )}
             {pathname.includes("/admin") && (
               <ul>
-                <Link className="btn btn-outline-light" onClick={goBack}>
+                <Button className="btn btn-outline-light" onClick={goBack}>
                   Back
-                </Link>
+                </Button>
               </ul>
           )}
           </div>

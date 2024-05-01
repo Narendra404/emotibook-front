@@ -14,7 +14,7 @@ export default function ViewUser() {
 
   useEffect(() => {
     loadUser();
-  }, []);
+  });
 
   const loadUser = async () => {
     try {

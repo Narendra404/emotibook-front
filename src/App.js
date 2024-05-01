@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
@@ -25,8 +24,8 @@ function App() {
                     <Route path="/adduser" element={<AddUser />} />
                     <Route path="/edituser/:id" element={<EditUser />} />
                     <Route path="/viewuser/:id" element={<ViewUser />} />
-                    <Route path="/"element={<Index />} />
-                    <Route path="/addPost/:id"element={<AddPost />} />
+                    <Route path="/" element={<Index />} />
+                    <Route path="/addPost/:id" element={<AddPost />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/loginFail" element={<LoginFail />} />
                     <Route path="/dashboard/:id" element={<Dashboard />} />
