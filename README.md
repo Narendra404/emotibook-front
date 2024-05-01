@@ -4,7 +4,7 @@ Welcome to the frontend of Emotibook - a sentiment-based social network.
 
 ## Overview
 
-This React application provides the frontend interface for the Emotibook application. It allows users to view and interact with posts, users, and ratings within the Emotibook ecosystem.
+This React application provides the frontend interface for the Emotibook application. It allows users to view and interact with posts and users within the Emotibook ecosystem.
 
 ## Technologies Used
 
